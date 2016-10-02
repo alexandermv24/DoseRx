@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notifications"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mattalexander.dose.Notifications">
+
+    <TextView
+        android:text="9 AM: You are scheduled to take Isoniazid, Rifampin, Pyrazinamide, and Ethambutol today."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <GridLayout
+        android:layout_width="400dp"
+        android:rowCount="2"
+        android:columnCount="1"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="38dp">
+
+        <Button
+            android:text="Drug Information"
+            android:layout_height="wrap_content"
+            android:id="@+id/button10"
+            android:textSize="24sp"
+            android:layout_width="350dp" />
+
+        <Button
+            android:text="Add New/Modify Medications"
+            android:layout_height="wrap_content"
+            android:id="@+id/button11"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:layout_width="350dp" />
+    </GridLayout>
+
+    <TextView
+        android:text="Waiting on Bluetooth confirmation..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button13"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_alignBaseline="@+id/button15"
+        android:layout_alignBottom="@+id/button15"
+        android:layout_alignLeft="@+id/gridLayout3"
+        android:layout_alignStart="@+id/gridLayout3" />
+
+    <Button
+        android:text="Not Now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button15"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="64dp"
+        android:layout_marginEnd="64dp" />
+
+</RelativeLayout>
